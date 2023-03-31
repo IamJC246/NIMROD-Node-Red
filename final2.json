@@ -1,0 +1,4220 @@
+[
+    {
+        "id": "6d2c3d7e.4fc894",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c5c4cf0c.501d4",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7050924bea833d31",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "85fa486f.e42ed8",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d1059132.c710f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Sensor ",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ebe44928.304118",
+        "type": "ui_group",
+        "name": "Sensors",
+        "tab": "85fa486f.e42ed8",
+        "order": 3,
+        "disp": true,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ffdfe9ef.ad3618",
+        "type": "ui_group",
+        "name": "Menu",
+        "tab": "85fa486f.e42ed8",
+        "order": 2,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "68ed6be2.787644",
+        "type": "ui_group",
+        "name": "Charts",
+        "tab": "85fa486f.e42ed8",
+        "order": 4,
+        "disp": true,
+        "width": "25",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1d2c4877.885d78",
+        "type": "aws-config"
+    },
+    {
+        "id": "5303f15d11512fd1",
+        "type": "serial-port",
+        "serialport": "COM6",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "0",
+        "bin": "bin",
+        "out": "time",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "942090d156614ee1",
+        "type": "ui_group",
+        "name": "First MQ7",
+        "tab": "cb8d5110d9855605",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c78b7abcc47833f2",
+        "type": "ui_group",
+        "name": "Second MQ7",
+        "tab": "cb8d5110d9855605",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "748e3f47c91238e9",
+        "type": "ui_group",
+        "name": "Second MQ138",
+        "tab": "cb8d5110d9855605",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "13e1f4c7a762f386",
+        "type": "ui_group",
+        "name": "First MQ138",
+        "tab": "cb8d5110d9855605",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "cb8d5110d9855605",
+        "type": "ui_tab",
+        "name": "Gas Monitoring of Carbon Monoxide and Toluene",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bfed2819.042f18",
+        "type": "RF24radio",
+        "name": "MQ6",
+        "ce": "17",
+        "cs": "0",
+        "irq": "0",
+        "spispeed": "10000000",
+        "autorecover": true,
+        "palevel": "2",
+        "enablelna": false,
+        "datarate": "0",
+        "channel": "5",
+        "crclength": "2",
+        "retriesdelay": "15",
+        "retriescount": "15",
+        "payloadsize": "4",
+        "basepoll": "40000",
+        "txdelay": "250"
+    },
+    {
+        "id": "3a7befa3.ab43e",
+        "type": "RF24radio",
+        "name": "MiCS",
+        "ce": "17",
+        "cs": "0",
+        "irq": "0",
+        "spispeed": "10000000",
+        "autorecover": true,
+        "palevel": "2",
+        "enablelna": false,
+        "datarate": "0",
+        "channel": "70",
+        "crclength": "2",
+        "retriesdelay": "15",
+        "retriescount": "15",
+        "payloadsize": "4",
+        "basepoll": "40000",
+        "txdelay": "1450"
+    },
+    {
+        "id": "d905c2e5.b5f678",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "cd5fcf35.19978",
+        "type": "ui_link",
+        "name": "AWS S3 Management Console",
+        "link": "https://s3.console.aws.amazon.com/s3/buckets/nimrodsensorbucket?region=ap-northeast-1&tab=objects",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 1
+    },
+    {
+        "id": "44c8bc0c.008f84",
+        "type": "rpi-gpio out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "pin": "40",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "x": 2740,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "8e5655ad.1b7c78",
+        "type": "rpi-gpio out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "pin": "38",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "x": 2740,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "f390e1c4.330e6",
+        "type": "ui_switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "label": "d",
+        "tooltip": "",
+        "group": "ffdfe9ef.ad3618",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 2590,
+        "y": 520,
+        "wires": [
+            [
+                "44c8bc0c.008f84"
+            ]
+        ]
+    },
+    {
+        "id": "5f261d4d.b74f74",
+        "type": "ui_switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "label": "fan on",
+        "tooltip": "",
+        "group": "ffdfe9ef.ad3618",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 2590,
+        "y": 640,
+        "wires": [
+            [
+                "8e5655ad.1b7c78"
+            ]
+        ]
+    },
+    {
+        "id": "72e4a0d1.3af23",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 1,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MQ-6-1: poten",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 800,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "fb9c5423.73a498",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 1,
+        "width": 25,
+        "height": 5,
+        "label": "MQ-6-1: poten chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 820,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d1feb06.826278",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 3,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MiCS-1: poten",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 800,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f16eaa9.a213a58",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 3,
+        "width": 25,
+        "height": 5,
+        "label": "MiCS-1 poten chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59274bce.3531e4",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 4,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MiCS-2 poten",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 820,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ae74d441.4da318",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 4,
+        "width": 25,
+        "height": 5,
+        "label": "MiCS-2 poten chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fb8498f.390f28",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 5,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MQ7-1 poten",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 790,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "6993b201.9c964c",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 5,
+        "width": 25,
+        "height": 5,
+        "label": "MQ7-1 poten chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3041e51a.a5004a",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 6,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MQ7-2 poten",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 810,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "40e1314b.ef3bd",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 6,
+        "width": 25,
+        "height": 5,
+        "label": "MQ7-2 poten chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51064590.09ea7c",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 7,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MQ137-1 sensor",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1150,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "a5f2ff2e.fa759",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 7,
+        "width": 25,
+        "height": 5,
+        "label": "MQ137-1 sensor chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1160,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf83265e.437a48",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 8,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MQ137-2 sensor",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1170,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "281a1b46.ab1574",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 8,
+        "width": 25,
+        "height": 5,
+        "label": "MQ137-2 sensor chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1180,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "acae03b9.fae89",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 9,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MQ138-1 sensor",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1170,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "c87e5e79.a719c",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 9,
+        "width": 25,
+        "height": 5,
+        "label": "MQ138-1 sensor chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1180,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a68e1a32.0fda68",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 10,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MQ-138 sensor",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1180,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "1618c563.46574b",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 10,
+        "width": 25,
+        "height": 5,
+        "label": "MQ138-2 sensor chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1200,
+        "y": 1280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74b7cc38.810204",
+        "type": "ui_media",
+        "z": "6d2c3d7e.4fc894",
+        "group": "ffdfe9ef.ad3618",
+        "name": "Logo",
+        "width": 5,
+        "height": 5,
+        "order": 1,
+        "category": "Logo",
+        "file": "Nimrod.png",
+        "layout": "center",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd26772b.efa5a8",
+        "type": "ui_text",
+        "z": "6d2c3d7e.4fc894",
+        "group": "ffdfe9ef.ad3618",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "name": "",
+        "label": "Hello, Guardian!",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 200,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9ad59637.0ae968",
+        "type": "rpi-gpio out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "pin": "36",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "x": 2740,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "d53c75d7.8f5e98",
+        "type": "rpi-gpio out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "pin": "32",
+        "set": true,
+        "level": "1",
+        "freq": "",
+        "out": "out",
+        "x": 2740,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "b03d08a.c9257f8",
+        "type": "ui_switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "label": "extend",
+        "tooltip": "",
+        "group": "ffdfe9ef.ad3618",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 2590,
+        "y": 800,
+        "wires": [
+            [
+                "9ad59637.0ae968"
+            ]
+        ]
+    },
+    {
+        "id": "1455f995.c011a6",
+        "type": "ui_switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "label": "retract",
+        "tooltip": "",
+        "group": "ffdfe9ef.ad3618",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 2550,
+        "y": 1100,
+        "wires": [
+            [
+                "d53c75d7.8f5e98"
+            ]
+        ]
+    },
+    {
+        "id": "6ecd17efd25d5160",
+        "type": "function",
+        "z": "7050924bea833d31",
+        "name": "",
+        "func": "var i = msg.payload;\nvar mq71;\nvar mq72;\nvar mq1381;\nvar mq1382;\n\nfor (i = 0; i <4 ; ++i)\n{\n    mq71 = i.array[1];\n    mq72 = i.array[2];\n    mq1381 = i.array[3];\n    mq1382 = i.array[4];\n}\n\nmsg.payload.mq71 = mq71;\nmsg.payload.mq72 = mq72;\nmsg.payload.mq71381 = mq1381;\nmsg.payload.mq71382 = mq1382;\n\n\nreturn msg; ",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 560,
+        "wires": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8c0a1f805107170f",
+        "type": "serial in",
+        "z": "7050924bea833d31",
+        "name": "",
+        "serial": "5303f15d11512fd1",
+        "x": 70,
+        "y": 120,
+        "wires": [
+            [
+                "53e424f85af1ca93"
+            ]
+        ]
+    },
+    {
+        "id": "fd356e29df875642",
+        "type": "file",
+        "z": "7050924bea833d31",
+        "name": "",
+        "filename": "D:\\John\\Capstone\\MQ7-MQ138 PPM recording.csv",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1090,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f9709af06215c8e",
+        "type": "ui_gauge",
+        "z": "7050924bea833d31",
+        "name": "",
+        "group": "942090d156614ee1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "PPM",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "999",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "319d3c77dacba4f2",
+        "type": "ui_gauge",
+        "z": "7050924bea833d31",
+        "name": "",
+        "group": "c78b7abcc47833f2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "PPM",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "999",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a24d040ec98e20ba",
+        "type": "ui_gauge",
+        "z": "7050924bea833d31",
+        "name": "",
+        "group": "748e3f47c91238e9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "PPM",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "999",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7752d2c061921dfe",
+        "type": "function",
+        "z": "7050924bea833d31",
+        "name": "splitting and naming the data",
+        "func": "var i = msg.payload;\nvar mq71;\nvar mq72;\nvar mq1381;\nvar mq1382;\n\nfor (i = 0; i <4 ; ++i)\n{\n    mq71 = i.array[0];\n    mq72 = i.array[1];\n    mq1381 = i.array[2];\n    mq1382 = i.array[3];\n}\n\nreturn [mq71, mq72, mq1381, mq1382]; ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f8d7f1eb3ac7eb9",
+        "type": "function",
+        "z": "7050924bea833d31",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d2ffb4d55e09026",
+        "type": "function",
+        "z": "7050924bea833d31",
+        "name": "",
+        "func": "const i = msg.payload; \nconst n = 4 //tweak this to add more items per line\n\nconst result = new Array(Math.ceil(i.length / n))\n  .fill()\n  .map(_ => i.splice(0, n))",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 560,
+        "wires": [
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "53e424f85af1ca93",
+        "type": "function",
+        "z": "7050924bea833d31",
+        "name": "",
+        "func": "var newMsg = {payload: msg.payload.toString()};\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 120,
+        "wires": [
+            [
+                "ab418325f1a1a21d"
+            ]
+        ]
+    },
+    {
+        "id": "ab418325f1a1a21d",
+        "type": "split",
+        "z": "7050924bea833d31",
+        "name": "",
+        "splt": " ",
+        "spltType": "str",
+        "arraySplt": "1",
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 370,
+        "y": 120,
+        "wires": [
+            [
+                "7d6c953e65fca476"
+            ]
+        ]
+    },
+    {
+        "id": "7d6c953e65fca476",
+        "type": "function",
+        "z": "7050924bea833d31",
+        "name": "payload organizer",
+        "func": "var newMsg = {};\nvar Sensor = {\n MQ71: 0, \n MQ72: 0,\n MQ1381: 0,\n MQ1382: 0,\n Time: new Date().toString()\n};\n\ncontext.data = context.data || {};\n\nswitch(msg.parts.index){\n case 0:\n context.data.MQ71 = parseFloat(msg.payload);\n msg = null;\n break;\n case 1:\n context.data.MQ72 = parseFloat(msg.payload);\n msg = null;\n break;\n case 2:\n context.data.MQ1381 = parseFloat(msg.payload);\n msg = null;\n break;\n case 3:\n context.data.MQ1382 = parseFloat(msg.payload);\n msg = null;\n break;\n default:\n msg = null;\n break;\n}\n\nAllData = context.data.MQ71 &&\n context.data.MQ72 &&\n context.data.MQ1381 &&\n context.data.MQ1382;\n\nif(AllData){\n var time = Date();\n context.data.Time = time.toString();\n Sensor = context.data;\n newMsg = { payload: context.data,\n topic: 'Frame Sensor' };\n context.data = null;\n return newMsg;\n}\nelse\n return msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 160,
+        "wires": [
+            [
+                "fe7ebd0c3758e977",
+                "fd356e29df875642"
+            ]
+        ]
+    },
+    {
+        "id": "fe7ebd0c3758e977",
+        "type": "function",
+        "z": "7050924bea833d31",
+        "name": "Split Data",
+        "func": "var msgMQ71 = {payload: msg.payload.MQ71};\nvar msgMQ72 = {payload: msg.payload.MQ72};\nvar msgMQ1381 = {payload: msg.payload.MQ1381};\nvar msgMQ1382 = {payload: msg.payload.MQ1382};\n\nreturn [msgMQ71, msgMQ72, msgMQ1381, msgMQ1382 ];",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 240,
+        "wires": [
+            [
+                "1f9709af06215c8e",
+                "a2caf7561c9bbc2b"
+            ],
+            [
+                "319d3c77dacba4f2",
+                "05b8edf68cfa801f"
+            ],
+            [
+                "0e151d3d7710a8e8",
+                "abd3cc70331af0d6"
+            ],
+            [
+                "a24d040ec98e20ba",
+                "86f732fc6945335f"
+            ]
+        ]
+    },
+    {
+        "id": "a2caf7561c9bbc2b",
+        "type": "ui_chart",
+        "z": "7050924bea833d31",
+        "name": "",
+        "group": "942090d156614ee1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1010,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "05b8edf68cfa801f",
+        "type": "ui_chart",
+        "z": "7050924bea833d31",
+        "name": "",
+        "group": "c78b7abcc47833f2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1010,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0e151d3d7710a8e8",
+        "type": "ui_chart",
+        "z": "7050924bea833d31",
+        "name": "",
+        "group": "13e1f4c7a762f386",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1010,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86f732fc6945335f",
+        "type": "ui_chart",
+        "z": "7050924bea833d31",
+        "name": "",
+        "group": "748e3f47c91238e9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1010,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "abd3cc70331af0d6",
+        "type": "ui_gauge",
+        "z": "7050924bea833d31",
+        "name": "",
+        "group": "13e1f4c7a762f386",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "",
+        "label": "PPM",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "999",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1010,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "5e0a75c6.83878c",
+        "type": "RF24input",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ6: poten",
+        "topic": "",
+        "radio": "bfed2819.042f18",
+        "outputstring": false,
+        "hidestats": false,
+        "pipeaddress": "0x7878787878",
+        "autoack": true,
+        "mergeframes": "1",
+        "mergetimeout": "1000",
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "cf66a544.e1e7a8",
+                "92c9b5.019b9648"
+            ]
+        ]
+    },
+    {
+        "id": "cf66a544.e1e7a8",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get first sensor",
+        "func": "var index = 0;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 300,
+        "wires": [
+            [
+                "72e4a0d1.3af23",
+                "fb9c5423.73a498",
+                "21dff84.86bfd08",
+                "989a6274.7f3e6"
+            ]
+        ]
+    },
+    {
+        "id": "92c9b5.019b9648",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get second sensor",
+        "func": "var index = 2;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 380,
+        "wires": [
+            [
+                "8f74136d.036c8",
+                "f1fe2da8.c42f1",
+                "a6c5a70.b2bc358",
+                "192a2534.559d3b"
+            ]
+        ]
+    },
+    {
+        "id": "f1fe2da8.c42f1",
+        "type": "ui_gauge",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "ebe44928.304118",
+        "order": 2,
+        "width": 4,
+        "height": 5,
+        "gtype": "gage",
+        "title": "MQ-6-2: poten",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 820,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "8f74136d.036c8",
+        "type": "ui_chart",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "group": "68ed6be2.787644",
+        "order": 2,
+        "width": 25,
+        "height": 5,
+        "label": "MQ-6-2: poten chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 840,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b2aa953.9c4428",
+        "type": "RF24input",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MiCS: poten",
+        "topic": "",
+        "radio": "bfed2819.042f18",
+        "outputstring": false,
+        "hidestats": false,
+        "pipeaddress": "0x7878787867",
+        "autoack": true,
+        "mergeframes": "1",
+        "mergetimeout": "1000",
+        "x": 310,
+        "y": 560,
+        "wires": [
+            [
+                "ec53f5fd.e72cb8",
+                "1de7acf6.1fa003"
+            ]
+        ]
+    },
+    {
+        "id": "ec53f5fd.e72cb8",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get first sensor",
+        "func": "var index = 0;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 520,
+        "wires": [
+            [
+                "9d1feb06.826278",
+                "f16eaa9.a213a58",
+                "51a41841.4c9958",
+                "3ae363d1.7f877c"
+            ]
+        ]
+    },
+    {
+        "id": "1de7acf6.1fa003",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get second sensor",
+        "func": "var index = 2;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 600,
+        "wires": [
+            [
+                "59274bce.3531e4",
+                "ae74d441.4da318",
+                "e330fd7.18d32",
+                "730fe5e.e1c411c"
+            ]
+        ]
+    },
+    {
+        "id": "b69455c8.285c68",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "convert to false",
+        "func": "var output = false;\nfor (var i = 0; i < 10; i++)\n{\n    if (msg.payload[i] === true) \n    {\n        output = true;\n        break;\n    }\n    else\n    {\n     output = false;\n     break;\n    }\n}\nreturn {payload: output};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2340,
+        "y": 720,
+        "wires": [
+            [
+                "8e5655ad.1b7c78",
+                "d53c75d7.8f5e98"
+            ]
+        ]
+    },
+    {
+        "id": "f62ac175.e1972",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 2",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2080,
+        "y": 600,
+        "wires": [
+            [
+                "b69455c8.285c68"
+            ]
+        ]
+    },
+    {
+        "id": "772764f7.3abbcc",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 3",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2080,
+        "y": 660,
+        "wires": [
+            [
+                "b69455c8.285c68"
+            ]
+        ]
+    },
+    {
+        "id": "ff73defc.fd03e",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 4",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2080,
+        "y": 720,
+        "wires": [
+            [
+                "b69455c8.285c68"
+            ]
+        ]
+    },
+    {
+        "id": "a8ae4842.4cbe68",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 5",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2080,
+        "y": 780,
+        "wires": [
+            [
+                "b69455c8.285c68"
+            ]
+        ]
+    },
+    {
+        "id": "8de767b4.e7ce28",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 6",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2080,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e203e18e.b3b61",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 7",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2080,
+        "y": 900,
+        "wires": [
+            [
+                "b69455c8.285c68"
+            ]
+        ]
+    },
+    {
+        "id": "90adb7ff.015e58",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 8",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2080,
+        "y": 960,
+        "wires": [
+            [
+                "b69455c8.285c68"
+            ]
+        ]
+    },
+    {
+        "id": "968dc3c8.b0cbd",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 9",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2080,
+        "y": 1020,
+        "wires": [
+            [
+                "b69455c8.285c68"
+            ]
+        ]
+    },
+    {
+        "id": "b04d656d.29d768",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 10",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2090,
+        "y": 1080,
+        "wires": [
+            [
+                "b69455c8.285c68"
+            ]
+        ]
+    },
+    {
+        "id": "430d2e79.e85fa",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate input 1",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2080,
+        "y": 540,
+        "wires": [
+            [
+                "b69455c8.285c68"
+            ]
+        ]
+    },
+    {
+        "id": "a61a831f.1ab43",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 540,
+        "wires": [
+            [
+                "430d2e79.e85fa"
+            ]
+        ]
+    },
+    {
+        "id": "989a6274.7f3e6",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 540,
+        "wires": [
+            [
+                "a61a831f.1ab43"
+            ],
+            [
+                "4431f473.a6df5c"
+            ]
+        ]
+    },
+    {
+        "id": "192a2534.559d3b",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 600,
+        "wires": [
+            [
+                "5f7681ed.20b13"
+            ],
+            [
+                "7d7cf7ec.3962d8"
+            ]
+        ]
+    },
+    {
+        "id": "5f7681ed.20b13",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 600,
+        "wires": [
+            [
+                "f62ac175.e1972"
+            ]
+        ]
+    },
+    {
+        "id": "51a41841.4c9958",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 660,
+        "wires": [
+            [
+                "5a5414b6.49cdac"
+            ],
+            [
+                "6e29c33d.18769c"
+            ]
+        ]
+    },
+    {
+        "id": "5a5414b6.49cdac",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 660,
+        "wires": [
+            [
+                "772764f7.3abbcc"
+            ]
+        ]
+    },
+    {
+        "id": "73d1bd7f.754744",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 720,
+        "wires": [
+            [
+                "ff73defc.fd03e"
+            ]
+        ]
+    },
+    {
+        "id": "e330fd7.18d32",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 720,
+        "wires": [
+            [
+                "73d1bd7f.754744"
+            ],
+            [
+                "b7fd8a33.b4e878"
+            ]
+        ]
+    },
+    {
+        "id": "211674ba.c8db4c",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 780,
+        "wires": [
+            [
+                "474ea4d1.90419c"
+            ],
+            [
+                "102a501f.c1f6b"
+            ]
+        ]
+    },
+    {
+        "id": "474ea4d1.90419c",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 780,
+        "wires": [
+            [
+                "a8ae4842.4cbe68"
+            ]
+        ]
+    },
+    {
+        "id": "71941230.284edc",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "200",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 840,
+        "wires": [
+            [
+                "b3dc750a.59d488"
+            ],
+            [
+                "4502b8ff.163318"
+            ]
+        ]
+    },
+    {
+        "id": "b3dc750a.59d488",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 840,
+        "wires": [
+            [
+                "8de767b4.e7ce28"
+            ]
+        ]
+    },
+    {
+        "id": "d7e92a2b.6a6ed8",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 900,
+        "wires": [
+            [
+                "e203e18e.b3b61"
+            ]
+        ]
+    },
+    {
+        "id": "c0cd7f4a.2f57",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "25",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "25",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 900,
+        "wires": [
+            [
+                "d7e92a2b.6a6ed8"
+            ],
+            [
+                "8439bc4b.28a99"
+            ]
+        ]
+    },
+    {
+        "id": "b6ccbf44.1af64",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "25",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "25",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 960,
+        "wires": [
+            [
+                "1e2656d1.313589"
+            ],
+            [
+                "3e03372b.b230f8"
+            ]
+        ]
+    },
+    {
+        "id": "1e2656d1.313589",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 960,
+        "wires": [
+            [
+                "90adb7ff.015e58"
+            ]
+        ]
+    },
+    {
+        "id": "265ac31e.3aa32c",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "300",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "300",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 1020,
+        "wires": [
+            [
+                "2eedbc2d.f37de4"
+            ],
+            [
+                "6c525c2.79191a4"
+            ]
+        ]
+    },
+    {
+        "id": "2eedbc2d.f37de4",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 1020,
+        "wires": [
+            [
+                "968dc3c8.b0cbd"
+            ]
+        ]
+    },
+    {
+        "id": "e7351fdf.1d945",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1860,
+        "y": 1080,
+        "wires": [
+            [
+                "b04d656d.29d768"
+            ]
+        ]
+    },
+    {
+        "id": "e2adfc57.07c8e",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comp",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "300",
+                "vt": "num"
+            },
+            {
+                "t": "lt",
+                "v": "3",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1690,
+        "y": 1080,
+        "wires": [
+            [
+                "e7351fdf.1d945"
+            ],
+            [
+                "42331706.4c9dd8"
+            ]
+        ]
+    },
+    {
+        "id": "f7e14a4b.524798",
+        "type": "RF24input",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ7: poten",
+        "topic": "",
+        "radio": "bfed2819.042f18",
+        "outputstring": false,
+        "hidestats": false,
+        "pipeaddress": "0x7878787899",
+        "autoack": true,
+        "mergeframes": "1",
+        "mergetimeout": "1000",
+        "x": 310,
+        "y": 800,
+        "wires": [
+            [
+                "b559d093.731cf",
+                "3a89c4f1.2874ec"
+            ]
+        ]
+    },
+    {
+        "id": "b559d093.731cf",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get first sensor",
+        "func": "var index = 0;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 760,
+        "wires": [
+            [
+                "8fb8498f.390f28",
+                "6993b201.9c964c",
+                "211674ba.c8db4c",
+                "983e74a7.a2b2f8"
+            ]
+        ]
+    },
+    {
+        "id": "3a89c4f1.2874ec",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get second sensor",
+        "func": "var index = 2;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 840,
+        "wires": [
+            [
+                "3041e51a.a5004a",
+                "40e1314b.ef3bd",
+                "71941230.284edc",
+                "241b3e00.ba8902"
+            ]
+        ]
+    },
+    {
+        "id": "20d86021.5b53b",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get first sensor",
+        "func": "var index = 0;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 960,
+        "wires": [
+            [
+                "f4aaae00.f2d8"
+            ]
+        ]
+    },
+    {
+        "id": "2790b26f.d746ae",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get second sensor",
+        "func": "var index = 2;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 1040,
+        "wires": [
+            [
+                "48344576.e48c2c"
+            ]
+        ]
+    },
+    {
+        "id": "c70e882c.b15a98",
+        "type": "RF24input",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ138 sensor",
+        "topic": "",
+        "radio": "bfed2819.042f18",
+        "outputstring": false,
+        "hidestats": false,
+        "pipeaddress": "0x7878787834",
+        "autoack": true,
+        "mergeframes": "1",
+        "mergetimeout": "1000",
+        "x": 280,
+        "y": 1240,
+        "wires": [
+            [
+                "4a798aaa.ce1bd4",
+                "cb52c08c.7fb68"
+            ]
+        ]
+    },
+    {
+        "id": "4a798aaa.ce1bd4",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get first sensor",
+        "func": "var index = 0;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1200,
+        "wires": [
+            [
+                "602e740.12f208c"
+            ]
+        ]
+    },
+    {
+        "id": "cb52c08c.7fb68",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "Splitting array: get second sensor",
+        "func": "var index = 2;\nvar value = msg.payload[index];\nmsg.payload = value;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1280,
+        "wires": [
+            [
+                "9901f6bf.040888"
+            ]
+        ]
+    },
+    {
+        "id": "7fb93caf.e91e94",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "21dff84.86bfd08"
+        ],
+        "x": 275,
+        "y": 240,
+        "wires": [
+            [
+                "750ba690.027278"
+            ]
+        ]
+    },
+    {
+        "id": "21dff84.86bfd08",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ61",
+        "links": [
+            "7fb93caf.e91e94"
+        ],
+        "x": 735,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a6c5a70.b2bc358",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ62",
+        "links": [
+            "17606b28.b96de5"
+        ],
+        "x": 815,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "3ae363d1.7f877c",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MiCS1",
+        "links": [
+            "abde2379.9621f"
+        ],
+        "x": 735,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "730fe5e.e1c411c",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MiCS2",
+        "links": [
+            "bd8df70e.bfff38"
+        ],
+        "x": 755,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "17606b28.b96de5",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "a6c5a70.b2bc358"
+        ],
+        "x": 275,
+        "y": 280,
+        "wires": [
+            [
+                "750ba690.027278"
+            ]
+        ]
+    },
+    {
+        "id": "abde2379.9621f",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "3ae363d1.7f877c"
+        ],
+        "x": 275,
+        "y": 400,
+        "wires": [
+            [
+                "750ba690.027278"
+            ]
+        ]
+    },
+    {
+        "id": "bd8df70e.bfff38",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "730fe5e.e1c411c"
+        ],
+        "x": 275,
+        "y": 440,
+        "wires": [
+            [
+                "750ba690.027278"
+            ]
+        ]
+    },
+    {
+        "id": "a17dfb6e.baca38",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "983e74a7.a2b2f8"
+        ],
+        "x": 275,
+        "y": 540,
+        "wires": [
+            [
+                "750ba690.027278"
+            ]
+        ]
+    },
+    {
+        "id": "fe6253c5.26419",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "241b3e00.ba8902"
+        ],
+        "x": 275,
+        "y": 580,
+        "wires": [
+            [
+                "750ba690.027278"
+            ]
+        ]
+    },
+    {
+        "id": "7ff87e42.4ffa3",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "66967575.398d6c"
+        ],
+        "x": 275,
+        "y": 680,
+        "wires": [
+            [
+                "750ba690.027278",
+                "f65477.c22d0b88"
+            ]
+        ]
+    },
+    {
+        "id": "5d305fb9.f7357",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "c0eec529.904908"
+        ],
+        "x": 275,
+        "y": 720,
+        "wires": [
+            [
+                "750ba690.027278",
+                "f65477.c22d0b88"
+            ]
+        ]
+    },
+    {
+        "id": "9350a8b2.516c58",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "f32a17e.0b05ae8"
+        ],
+        "x": 275,
+        "y": 820,
+        "wires": [
+            [
+                "750ba690.027278",
+                "3a357822.8559a8"
+            ]
+        ]
+    },
+    {
+        "id": "b838e4c0.d19688",
+        "type": "link in",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "links": [
+            "b57ecbab.499aa8"
+        ],
+        "x": 275,
+        "y": 860,
+        "wires": [
+            [
+                "750ba690.027278",
+                "3a357822.8559a8"
+            ]
+        ]
+    },
+    {
+        "id": "983e74a7.a2b2f8",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ71",
+        "links": [
+            "a17dfb6e.baca38"
+        ],
+        "x": 735,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "241b3e00.ba8902",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ72",
+        "links": [
+            "fe6253c5.26419"
+        ],
+        "x": 755,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "66967575.398d6c",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ1371",
+        "links": [
+            "7ff87e42.4ffa3"
+        ],
+        "x": 1075,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "c0eec529.904908",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ1372",
+        "links": [
+            "5d305fb9.f7357"
+        ],
+        "x": 875,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "f32a17e.0b05ae8",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ1381",
+        "links": [
+            "9350a8b2.516c58"
+        ],
+        "x": 1095,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b57ecbab.499aa8",
+        "type": "link out",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ1382",
+        "links": [
+            "b838e4c0.d19688"
+        ],
+        "x": 1115,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "59b36c37.7f2eb4",
+        "type": "comment",
+        "z": "c5c4cf0c.501d4",
+        "name": "MQ6 poten",
+        "info": "",
+        "x": 120,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3b1acb17.7d4344",
+        "type": "comment",
+        "z": "c5c4cf0c.501d4",
+        "name": "MiCS poten",
+        "info": "",
+        "x": 130,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "ebebc04.ec25f4",
+        "type": "comment",
+        "z": "c5c4cf0c.501d4",
+        "name": "MQ7 poten",
+        "info": "",
+        "x": 120,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "abdbd86c.2af4a8",
+        "type": "comment",
+        "z": "c5c4cf0c.501d4",
+        "name": "MQ137  sensor",
+        "info": "",
+        "x": 140,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ea0a9949.a1cc28",
+        "type": "comment",
+        "z": "c5c4cf0c.501d4",
+        "name": "MQ138  sensor",
+        "info": "",
+        "x": 140,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "f5e26f21.f05b5",
+        "type": "amazon s3 out",
+        "z": "c5c4cf0c.501d4",
+        "aws": "1d2c4877.885d78",
+        "bucket": "nimrodsensorbucket",
+        "filename": "",
+        "localFilename": "",
+        "region": "ap-northeast-1",
+        "name": "",
+        "x": 1130,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "cd1ad972.5147e8",
+        "type": "csv",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 750,
+        "y": 560,
+        "wires": [
+            [
+                "e09fb854.4743b8"
+            ]
+        ]
+    },
+    {
+        "id": "750ba690.027278",
+        "type": "join",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": ",",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "10",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 590,
+        "y": 560,
+        "wires": [
+            [
+                "cd1ad972.5147e8"
+            ]
+        ]
+    },
+    {
+        "id": "3cfaf5e9.d8c18a",
+        "type": "amazon s3 in",
+        "z": "c5c4cf0c.501d4",
+        "aws": "1d2c4877.885d78",
+        "bucket": "nimrodsensorbucket",
+        "region": "ap-northeast-1",
+        "filepattern": "sensor_database_3.csv",
+        "name": "",
+        "x": 180,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e09fb854.4743b8",
+        "type": "function",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "func": "return {\n  filename: `hello-${Date.now()}.csv`,\n  payload: Object.values(msg.payload[0]).join(\",\")\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36f4c77c.606228",
+        "type": "comment",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate (10 Inputs, 1 output)",
+        "info": "",
+        "x": 2120,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b288fddd.dd45b",
+        "type": "comment",
+        "z": "6d2c3d7e.4fc894",
+        "name": "comparator",
+        "info": "",
+        "x": 1710,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a1ec86a7.76c138",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1160,
+        "wires": [
+            [
+                "a372c277.954d1"
+            ]
+        ]
+    },
+    {
+        "id": "4431f473.a6df5c",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1160,
+        "wires": [
+            [
+                "a1ec86a7.76c138"
+            ]
+        ]
+    },
+    {
+        "id": "a372c277.954d1",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1160,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "cee51d67.0836e",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1200,
+        "wires": [
+            [
+                "48c05bf7.6b10f4"
+            ]
+        ]
+    },
+    {
+        "id": "7d7cf7ec.3962d8",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1200,
+        "wires": [
+            [
+                "cee51d67.0836e"
+            ]
+        ]
+    },
+    {
+        "id": "48c05bf7.6b10f4",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1200,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "dba5dbdc.13b108",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1240,
+        "wires": [
+            [
+                "a01a919f.76a47"
+            ]
+        ]
+    },
+    {
+        "id": "6e29c33d.18769c",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1240,
+        "wires": [
+            [
+                "dba5dbdc.13b108"
+            ]
+        ]
+    },
+    {
+        "id": "a01a919f.76a47",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1240,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "e513f89.443d308",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1280,
+        "wires": [
+            [
+                "b3063c15.a2a46"
+            ]
+        ]
+    },
+    {
+        "id": "b7fd8a33.b4e878",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1280,
+        "wires": [
+            [
+                "e513f89.443d308"
+            ]
+        ]
+    },
+    {
+        "id": "b3063c15.a2a46",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1280,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "2ef3c759.5b7118",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1320,
+        "wires": [
+            [
+                "81e1eb7e.eee4b8"
+            ]
+        ]
+    },
+    {
+        "id": "102a501f.c1f6b",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1320,
+        "wires": [
+            [
+                "2ef3c759.5b7118"
+            ]
+        ]
+    },
+    {
+        "id": "81e1eb7e.eee4b8",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1320,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "bbced454.4e8108",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1360,
+        "wires": [
+            [
+                "b297ce99.0522b"
+            ]
+        ]
+    },
+    {
+        "id": "4502b8ff.163318",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1360,
+        "wires": [
+            [
+                "bbced454.4e8108"
+            ]
+        ]
+    },
+    {
+        "id": "b297ce99.0522b",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1360,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "13f853c9.c6c43c",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1400,
+        "wires": [
+            [
+                "f71a6cc1.c0769"
+            ]
+        ]
+    },
+    {
+        "id": "8439bc4b.28a99",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1400,
+        "wires": [
+            [
+                "13f853c9.c6c43c"
+            ]
+        ]
+    },
+    {
+        "id": "f71a6cc1.c0769",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1400,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "5c61145f.2999dc",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1440,
+        "wires": [
+            [
+                "d947c176.725eb"
+            ]
+        ]
+    },
+    {
+        "id": "3e03372b.b230f8",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1440,
+        "wires": [
+            [
+                "5c61145f.2999dc"
+            ]
+        ]
+    },
+    {
+        "id": "d947c176.725eb",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1440,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "31377eee.960242",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1480,
+        "wires": [
+            [
+                "64eee2a6.d455fc"
+            ]
+        ]
+    },
+    {
+        "id": "6c525c2.79191a4",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1480,
+        "wires": [
+            [
+                "31377eee.960242"
+            ]
+        ]
+    },
+    {
+        "id": "64eee2a6.d455fc",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1480,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "a41afd8c.bdfcc",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "vn",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 2210,
+        "y": 1520,
+        "wires": [
+            [
+                "28bbfb9d.fc0824"
+            ]
+        ]
+    },
+    {
+        "id": "42331706.4c9dd8",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "val to bool conversion",
+        "func": "var value = msg.payload;\nvar booleanValue = Boolean(value);\nreturn {payload: booleanValue};\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2020,
+        "y": 1520,
+        "wires": [
+            [
+                "a41afd8c.bdfcc"
+            ]
+        ]
+    },
+    {
+        "id": "28bbfb9d.fc0824",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "if (msg.payload === false) {\n    msg.payload = true;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2360,
+        "y": 1520,
+        "wires": [
+            [
+                "74044ef4.2ffbf"
+            ]
+        ]
+    },
+    {
+        "id": "74044ef4.2ffbf",
+        "type": "switch",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 2570,
+        "y": 1340,
+        "wires": [
+            [
+                "8e5655ad.1b7c78",
+                "d53c75d7.8f5e98"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2fd24da.f47b8b2",
+        "type": "comment",
+        "z": "6d2c3d7e.4fc894",
+        "name": "reset",
+        "info": "",
+        "x": 1970,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "2285bcbd.a9e5b4",
+        "type": "comment",
+        "z": "6d2c3d7e.4fc894",
+        "name": "OR gate (10 Inputs, 1 output)",
+        "info": "",
+        "x": 2420,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "a722559.09aa8a8",
+        "type": "comment",
+        "z": "6d2c3d7e.4fc894",
+        "name": "transistor-like",
+        "info": "",
+        "x": 2230,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "1da45b5a.4dfbd5",
+        "type": "comment",
+        "z": "6d2c3d7e.4fc894",
+        "name": "mitigation turn on",
+        "info": "",
+        "x": 2340,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "df62e352.1335e",
+        "type": "comment",
+        "z": "6d2c3d7e.4fc894",
+        "name": "mitigation turn off",
+        "info": "",
+        "x": 2600,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "a9e7ea8d.d55ca8",
+        "type": "file",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "filename": "/home/pi/Desktop/MQ138data.txt",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 980,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1678faf.8be4e",
+        "type": "function",
+        "z": "c5c4cf0c.501d4",
+        "name": "payload organizer",
+        "func": "var data1 = msg.payload[0];\nvar data2 = msg.payload[1];\nvar now = new Date().toLocaleString();\nvar result = `${now},${data1},${data2}`;\n\nmsg.payload = result;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a357822.8559a8",
+        "type": "join",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\,",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 490,
+        "y": 820,
+        "wires": [
+            [
+                "f1678faf.8be4e"
+            ]
+        ]
+    },
+    {
+        "id": "fd649c5c.03af6",
+        "type": "file",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "filename": "/home/pi/Desktop/MQ137data.txt",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 980,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6f34462.0c9268",
+        "type": "function",
+        "z": "c5c4cf0c.501d4",
+        "name": "payload organizer",
+        "func": "var data1 = msg.payload[0];\nvar data2 = msg.payload[1];\nvar now = new Date().toLocaleString();\nvar result = `${now},${data1},${data2}`;\n\nmsg.payload = result;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f65477.c22d0b88",
+        "type": "join",
+        "z": "c5c4cf0c.501d4",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\,",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 490,
+        "y": 700,
+        "wires": [
+            [
+                "c6f34462.0c9268"
+            ]
+        ]
+    },
+    {
+        "id": "9901f6bf.040888",
+        "type": "range",
+        "z": "6d2c3d7e.4fc894",
+        "minin": "0",
+        "maxin": "255",
+        "minout": "0",
+        "maxout": "1023",
+        "action": "scale",
+        "round": true,
+        "property": "payload",
+        "name": "",
+        "x": 780,
+        "y": 1280,
+        "wires": [
+            [
+                "87d0b6f5.52d318"
+            ]
+        ]
+    },
+    {
+        "id": "602e740.12f208c",
+        "type": "range",
+        "z": "6d2c3d7e.4fc894",
+        "minin": "0",
+        "maxin": "255",
+        "minout": "0",
+        "maxout": "1023",
+        "action": "scale",
+        "round": false,
+        "property": "payload",
+        "name": "",
+        "x": 780,
+        "y": 1200,
+        "wires": [
+            [
+                "ed16e600.280f28"
+            ]
+        ]
+    },
+    {
+        "id": "87d0b6f5.52d318",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "// Get the raw sensor value from the message payload\nsensor_value = msg.payload;\n\n// Convert the raw sensor value to ppm\nvar voltage = (sensor_value * 5 / 1023);\n\nvar numerator = voltage -0.5774;\n\nvar ppm = Math.round(Math.exp(numerator/0.2958)); \n\n// Create a new message with the ppm value\nmsg.payload = ppm;\n\n// Return the message\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1280,
+        "wires": [
+            [
+                "1618c563.46574b",
+                "a68e1a32.0fda68",
+                "b57ecbab.499aa8",
+                "e2adfc57.07c8e"
+            ]
+        ]
+    },
+    {
+        "id": "ed16e600.280f28",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "// Get the raw sensor value from the message payload\nsensor_value = msg.payload;\n\n// Convert the raw sensor value to ppm\nvar voltage = (sensor_value * 5 / 1023);\n\nvar numerator = voltage -0.5774;\n\nvar ppm = Math.round(Math.exp(numerator/0.2958)); \n\n// Create a new message with the ppm value\nmsg.payload = ppm;\n\n// Return the message\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1200,
+        "wires": [
+            [
+                "c87e5e79.a719c",
+                "acae03b9.fae89",
+                "f32a17e.0b05ae8",
+                "265ac31e.3aa32c"
+            ]
+        ]
+    },
+    {
+        "id": "48344576.e48c2c",
+        "type": "range",
+        "z": "6d2c3d7e.4fc894",
+        "minin": "0",
+        "maxin": "255",
+        "minout": "0",
+        "maxout": "1023",
+        "action": "scale",
+        "round": true,
+        "property": "payload",
+        "name": "",
+        "x": 780,
+        "y": 1040,
+        "wires": [
+            [
+                "fab6008c.56b51"
+            ]
+        ]
+    },
+    {
+        "id": "f4aaae00.f2d8",
+        "type": "range",
+        "z": "6d2c3d7e.4fc894",
+        "minin": "0",
+        "maxin": "255",
+        "minout": "0",
+        "maxout": "1023",
+        "action": "scale",
+        "round": false,
+        "property": "payload",
+        "name": "",
+        "x": 780,
+        "y": 960,
+        "wires": [
+            [
+                "3982b270.02b4ee"
+            ]
+        ]
+    },
+    {
+        "id": "fab6008c.56b51",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "// Get the raw sensor value from the message payload\nsensor_value = msg.payload;\n\n// Convert the raw sensor value to ppm\nvar voltage = (sensor_value * 5 / 1023);\n\nvar numerator = voltage -0.5774;\n\nvar ppm = Math.round(Math.exp(numerator/0.2958)); \n\n// Create a new message with the ppm value\nmsg.payload = ppm;\n\n// Return the message\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 1040,
+        "wires": [
+            [
+                "bf83265e.437a48",
+                "281a1b46.ab1574",
+                "c0eec529.904908",
+                "b6ccbf44.1af64"
+            ]
+        ]
+    },
+    {
+        "id": "3982b270.02b4ee",
+        "type": "function",
+        "z": "6d2c3d7e.4fc894",
+        "name": "",
+        "func": "// Get the raw sensor value from the message payload\nsensor_value = msg.payload;\n\n// Convert the raw sensor value to ppm\nvar voltage = (sensor_value * 5 / 1023);\n\nvar numerator = voltage -0.5774;\n\nvar ppm = Math.round(Math.exp(numerator/0.2958)); \n\n// Create a new message with the ppm value\nmsg.payload = ppm;\n\n// Return the message\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 960,
+        "wires": [
+            [
+                "66967575.398d6c",
+                "51064590.09ea7c",
+                "a5f2ff2e.fa759",
+                "c0cd7f4a.2f57"
+            ]
+        ]
+    },
+    {
+        "id": "63c21d74.9512c4",
+        "type": "RF24input",
+        "z": "6d2c3d7e.4fc894",
+        "name": "MQ137 sensor",
+        "topic": "",
+        "radio": "bfed2819.042f18",
+        "outputstring": false,
+        "hidestats": false,
+        "pipeaddress": "0x7878787844",
+        "autoack": true,
+        "mergeframes": "1",
+        "mergetimeout": "1000",
+        "x": 300,
+        "y": 1000,
+        "wires": [
+            [
+                "20d86021.5b53b",
+                "2790b26f.d746ae"
+            ]
+        ]
+    }
+]
