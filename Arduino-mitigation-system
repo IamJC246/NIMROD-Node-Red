@@ -1,0 +1,75 @@
+bool a;
+bool b;
+bool c;
+bool d;
+
+void setup() 
+{
+  pinMode(9,INPUT_PULLUP);
+  pinMode(10,INPUT_PULLUP);
+  pinMode(11,INPUT_PULLUP);
+  pinMode(12,INPUT_PULLUP);
+
+  pinMode(2,OUTPUT);
+  pinMode(3,OUTPUT);
+  pinMode(4,OUTPUT);
+  pinMode(5,OUTPUT);
+
+  Serial.begin(9600);
+
+//  digitalWrite(2, HIGH);
+//  digitalWrite(3, HIGH);
+//  digitalWrite(4, HIGH);
+//  digitalWrite(5, HIGH);
+  
+}
+
+void loop() 
+{
+  a = digitalRead(9);
+  b = digitalRead(10);
+  c = digitalRead(11);
+  d = digitalRead(12);
+
+  digitalWrite(2, a);
+  digitalWrite(3, b);
+  digitalWrite(4, c);
+  digitalWrite(5, d);
+  
+//  if(a == HIGH && b == LOW)
+//  {
+//    digitalWrite(2, HIGH);
+//    digitalWrite(3, LOW);
+//    digitalWrite(4, LOW);
+//    digitalWrite(5, LOW);
+//  }
+//  else if(a == LOW && b == HIGH)
+//  {
+//    digitalWrite(2, LOW);
+//    digitalWrite(3, HIGH);
+//    digitalWrite(4, LOW);
+//    digitalWrite(5, LOW);
+//  }
+//  else
+//  {
+//    digitalWrite(2, LOW);
+//    digitalWrite(3, LOW);
+//    digitalWrite(4, LOW);
+//    digitalWrite(5, LOW);
+//  }
+
+  Serial.print("a ");
+  Serial.print("= ");
+  Serial.println(a);
+  Serial.print("b ");
+  Serial.print("= ");
+  Serial.println(b);
+  Serial.print("c ");
+  Serial.print("= ");
+  Serial.println(c);
+  Serial.print("d ");
+  Serial.print("= ");
+  Serial.println(d);
+  Serial.println("**************************");
+  delay(2000); 
+}
